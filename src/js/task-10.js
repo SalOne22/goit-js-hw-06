@@ -39,5 +39,5 @@ function createBoxes(amount) {
 
 function destroyBoxes() {
   boxesEl.textContent = '';
-  size = 0;
+  size = 30;
 }
