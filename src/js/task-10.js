@@ -19,8 +19,8 @@ function onCreateBoxes() {
   createBoxes(numberOfBoxes);
 }
 
+let size = 30;
 function createBoxes(amount) {
-  let size = 30;
   let boxEls = [];
 
   for (let i = 0; i < amount; i += 1) {
@@ -39,4 +39,5 @@ function createBoxes(amount) {
 
 function destroyBoxes() {
   boxesEl.textContent = '';
+  size = 0;
 }
