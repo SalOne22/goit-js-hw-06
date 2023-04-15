@@ -20,6 +20,6 @@ const galleryMarkup = images
   )
   .join('');
 
-const galleryEl = document.getElementsByClassName('gallery')[0];
+const galleryEl = document.querySelector('.gallery');
 
 galleryEl.insertAdjacentHTML('afterbegin', galleryMarkup);
