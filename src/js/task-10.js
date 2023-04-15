@@ -21,7 +21,7 @@ function onCreateBoxes() {
 
 let size = 30;
 function createBoxes(amount) {
-  let boxEls = [];
+  const fragment = document.createDocumentFragment();
 
   for (let i = 0; i < amount; i += 1) {
     const boxEl = document.createElement('div');
@@ -30,11 +30,11 @@ function createBoxes(amount) {
     boxEl.style.width = `${size}px`;
     boxEl.style.height = `${size}px`;
 
-    boxEls.push(boxEl);
+    fragment.appendChild(boxEl);
     size += 10;
   }
 
-  boxesEl.append(...boxEls);
+  boxesEl.appendChild(fragment);
 }
 
 function destroyBoxes() {
