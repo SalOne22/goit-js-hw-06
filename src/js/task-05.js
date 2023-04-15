@@ -6,7 +6,7 @@ nameInputEl.addEventListener('input', onNameChange);
 const defaultValue = nameOutputEl.textContent;
 
 function onNameChange(evt) {
-  const currentValue = evt.target.value;
+  const currentValue = evt.target.value.trim();
   if (!currentValue) {
     nameOutputEl.textContent = defaultValue;
     return;
