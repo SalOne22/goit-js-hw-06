@@ -7,8 +7,6 @@ const ingredients = [
   'Condiments',
 ];
 
-const fragment = document.createDocumentFragment();
-
 const ingredientsItemEls = ingredients.map((ingredient) => {
   const ingredientNode = document.createElement('li');
 
